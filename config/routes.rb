@@ -4,6 +4,8 @@ CocoSearch::Application.routes.draw do
   
   mount Resque::Server, :at => "/resque"
   
+  root "searches#index"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
