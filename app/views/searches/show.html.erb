@@ -1,2 +1,9 @@
-<h1>Searches#show</h1>
-<p>Find me in app/views/searches/show.html.erb</p>
+<h1>Search #<%=@search.id%></h1>
+
+<h3>Grammar</h3>
+<pre><code><%=@search.grammar%></code></pre>
+
+<h3>Evaluation URL</h3>
+<pre><code><%=@search.evaluation_url%></code></pre>
+
+<%= link_to "View all searches", searches_path %>

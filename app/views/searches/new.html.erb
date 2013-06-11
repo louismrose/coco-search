@@ -1,2 +1,15 @@
-<h1>Searches#new</h1>
-<p>Find me in app/views/searches/new.html.erb</p>
+<h1>Create a new Search</h1>
+
+<%= form_for @search  do |f| -%>
+  <fieldset>
+    <%= f.label :grammar, class: "control-label" %>
+    <%= f.text_area :grammar %>
+    
+    <%= f.label :evaluation_url, class: "control-label" %>
+    <%= f.text_field :evaluation_url %>
+    
+    <%= f.submit class: "btn-primary" %>
+  </fieldset>
+<% end -%>
+
+<%= link_to "View all searches", searches_path %>
